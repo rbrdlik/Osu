@@ -30,7 +30,9 @@ stopBtn.onclick = () => {
     startBtn.style.display = "inline-block";
     stopBtn.style.display = "none";
     kostka2.style.display = "none";
-    deleteBtn.style.display = "inline-block";
+    if(count>=1){
+        deleteBtn.style.display = "inline-block";
+    }
 }
 
 const changeColor = (element, red, green, blue) => {
