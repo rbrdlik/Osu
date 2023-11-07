@@ -4,6 +4,7 @@ const deleteBtn = document.getElementById('deleteBtn');
 const kostka2= document.getElementById('kostka2');
 const clickText = document.getElementById('clickText');
 const score_text = document.getElementById('score');
+const audio = new Audio("/res/audio/NyanCat.mp3");
 
 let timeStart = 0;
 let count = 0;
@@ -16,6 +17,7 @@ startBtn.onclick = () => {
     stopBtn.style.display = "inline-block";
     kostka2.style.display = "block";
     deleteBtn.style.display = "none";
+    audio.play();
 }
 
 deleteBtn.onclick = () => {
@@ -33,6 +35,7 @@ stopBtn.onclick = () => {
     if(count>=1){
         deleteBtn.style.display = "inline-block";
     }
+    audio.pause();
 }
 
 const changeColor = (element, red, green, blue) => {
