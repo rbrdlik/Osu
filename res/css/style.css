@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: sans-serif;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headbar{
+    width: 100%;
+    height: 12vh;
+    background: #303030;
+    border-bottom: 5px solid #262626;
+    text-align: center;
+    justify-content: center;
+}
+.headbar h2, h3{
+    color: #fff;
+}
+.startBtn{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: greenyellow;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.stopBtn{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: red;
+    border: 2px solid black;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.deleteBtn{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: rgb(161, 5, 161);
+    border: 2px solid black;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+#kostka2{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: none;
+    border: 2px solid #000;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .4s all;
+    filter: blur(1px);
+}
+#kostka2{
+    position: absolute;
+    top: 400px;
+    left: 850px;
+}
